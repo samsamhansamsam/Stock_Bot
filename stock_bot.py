@@ -14,7 +14,7 @@ GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
 # Gemini 설정
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-3-flash-preview')
 
 def get_market_data():
     """주요 시장 지수 및 매크로 지표 조회"""
