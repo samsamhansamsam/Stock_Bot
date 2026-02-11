@@ -177,13 +177,11 @@ def send_telegram(message):
     print("🚀 Attempting to send Telegram message...")
     if not TELEGRAM_TOKEN or not CHAT_ID:
         print("❌ Telegram tokens are missing in environment variables!")
-        print(f"Token present: {bool(TELEGRAM_TOKEN)}")
-        print(f"Chat ID present: {bool(CHAT_ID)}")
-        print("--- Generated Message Content (Not Sent) ---")
-        print(message)
         return
         
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+    
+    # 1차 시도: Markdown 모드
     payload = {
         'chat_id': CHAT_ID,
         'text': message,
@@ -194,10 +192,22 @@ def send_telegram(message):
     try:
         response = requests.post(url, json=payload)
         if response.status_code == 200:
-            print("✅ Telegram message sent successfully.")
+            print("✅ Telegram message sent successfully (Markdown).")
+            return
         else:
-            print(f"❌ Failed to send Telegram message. Status Code: {response.status_code}")
-            print(f"Response: {response.text}")
+            print(f"⚠️ Failed to send with Markdown. Status Code: {response.status_code}")
+            print(f"Error: {response.text}")
+            print("🔄 Retrying with Plain Text...")
+            
+            # 2차 시도: 일반 텍스트 모드 (실패 시 백업)
+            payload.pop('parse_mode') 
+            response = requests.post(url, json=payload)
+            if response.status_code == 200:
+                print("✅ Telegram message sent successfully (Plain Text).")
+            else:
+                print(f"❌ Failed to send Plain Text. Status Code: {response.status_code}")
+                print(f"Response: {response.text}")
+
     except Exception as e:
         print(f"❌ Error sending Telegram message: {e}")
 
