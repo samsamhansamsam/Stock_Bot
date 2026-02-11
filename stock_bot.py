@@ -174,7 +174,12 @@ def summarize_with_gemini(macro_data, sector_data, trending_text):
         return f"Gemini Error: {e}"
 
 def send_telegram(message):
+    print("🚀 Attempting to send Telegram message...")
     if not TELEGRAM_TOKEN or not CHAT_ID:
+        print("❌ Telegram tokens are missing in environment variables!")
+        print(f"Token present: {bool(TELEGRAM_TOKEN)}")
+        print(f"Chat ID present: {bool(CHAT_ID)}")
+        print("--- Generated Message Content (Not Sent) ---")
         print(message)
         return
         
@@ -185,7 +190,16 @@ def send_telegram(message):
         'parse_mode': 'Markdown',
         'disable_web_page_preview': True
     }
-    requests.post(url, json=payload)
+    
+    try:
+        response = requests.post(url, json=payload)
+        if response.status_code == 200:
+            print("✅ Telegram message sent successfully.")
+        else:
+            print(f"❌ Failed to send Telegram message. Status Code: {response.status_code}")
+            print(f"Response: {response.text}")
+    except Exception as e:
+        print(f"❌ Error sending Telegram message: {e}")
 
 def main():
     print("Fetching Market Data...")
