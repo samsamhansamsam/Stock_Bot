@@ -1099,3 +1099,14 @@ Date,Sector,Ticker,Change(%)
 2026-03-30,Energy,XLE,-0.96
 2026-03-30,Industrials,XLI,-1.63
 2026-03-30,Technology,XLK,-1.86
+2026-03-31,Financials,XLF,1.15
+2026-03-31,Communication Services,XLC,0.86
+2026-03-31,Utilities,XLU,0.72
+2026-03-31,Real Estate,XLRE,0.5
+2026-03-31,Healthcare,XLV,0.39
+2026-03-31,Materials,XLB,0.37
+2026-03-31,Consumer Staples,XLP,0.12
+2026-03-31,Consumer Discretionary,XLY,-0.02
+2026-03-31,Energy,XLE,-0.96
+2026-03-31,Industrials,XLI,-1.63
+2026-03-31,Technology,XLK,-1.86
