@@ -1704,3 +1704,14 @@ Date,Sector,Ticker,Change(%)
 2026-04-27,Industrials,XLI,-0.92
 2026-04-27,Healthcare,XLV,-1.41
 2026-04-27,Communication Services,XLC,-1.58
+2026-04-27,Financials,XLF,0.76
+2026-04-27,Communication Services,XLC,0.23
+2026-04-27,Technology,XLK,0.22
+2026-04-27,Industrials,XLI,0.02
+2026-04-27,Utilities,XLU,0.02
+2026-04-27,Energy,XLE,-0.18
+2026-04-27,Materials,XLB,-0.27
+2026-04-27,Healthcare,XLV,-0.5
+2026-04-27,Consumer Discretionary,XLY,-0.72
+2026-04-27,Real Estate,XLRE,-0.78
+2026-04-27,Consumer Staples,XLP,-1.07
