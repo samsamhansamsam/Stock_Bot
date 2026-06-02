@@ -2474,3 +2474,14 @@ Date,Sector,Ticker,Change(%)
 2026-06-01,Real Estate,XLRE,-1.64
 2026-06-01,Consumer Discretionary,XLY,-2.22
 2026-06-01,Utilities,XLU,-2.97
+2026-06-02,Technology,XLK,0.82
+2026-06-02,Utilities,XLU,0.8
+2026-06-02,Energy,XLE,0.63
+2026-06-02,Industrials,XLI,0.5
+2026-06-02,Materials,XLB,0.31
+2026-06-02,Real Estate,XLRE,-0.16
+2026-06-02,Financials,XLF,-0.24
+2026-06-02,Consumer Staples,XLP,-0.41
+2026-06-02,Healthcare,XLV,-1.35
+2026-06-02,Consumer Discretionary,XLY,-1.36
+2026-06-02,Communication Services,XLC,-1.59
