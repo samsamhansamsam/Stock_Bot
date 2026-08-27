@@ -4331,3 +4331,14 @@ Date,Sector,Ticker,Change(%)
 2026-08-26,Industrials,XLI,-0.34
 2026-08-26,Consumer Staples,XLP,-1.06
 2026-08-26,Energy,XLE,-1.66
+2026-08-27,Industrials,XLI,1.09
+2026-08-27,Technology,XLK,0.61
+2026-08-27,Energy,XLE,0.6
+2026-08-27,Utilities,XLU,0.46
+2026-08-27,Materials,XLB,0.17
+2026-08-27,Financials,XLF,-0.09
+2026-08-27,Consumer Staples,XLP,-0.29
+2026-08-27,Communication Services,XLC,-0.5
+2026-08-27,Real Estate,XLRE,-0.6
+2026-08-27,Consumer Discretionary,XLY,-0.67
+2026-08-27,Healthcare,XLV,-1.0
