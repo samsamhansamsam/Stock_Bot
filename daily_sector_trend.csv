@@ -5081,3 +5081,14 @@ Date,Sector,Ticker,Change(%)
 2026-09-30,Consumer Staples,XLP,-0.56
 2026-09-30,Financials,XLF,-0.56
 2026-09-30,Real Estate,XLRE,-0.68
+2026-10-01,Technology,XLK,nan
+2026-10-01,Financials,XLF,nan
+2026-10-01,Healthcare,XLV,nan
+2026-10-01,Energy,XLE,nan
+2026-10-01,Consumer Discretionary,XLY,nan
+2026-10-01,Consumer Staples,XLP,nan
+2026-10-01,Industrials,XLI,nan
+2026-10-01,Communication Services,XLC,nan
+2026-10-01,Utilities,XLU,nan
+2026-10-01,Materials,XLB,nan
+2026-10-01,Real Estate,XLRE,nan
