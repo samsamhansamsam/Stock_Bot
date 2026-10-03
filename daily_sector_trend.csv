@@ -5136,3 +5136,14 @@ Date,Sector,Ticker,Change(%)
 2026-10-03,Utilities,XLU,nan
 2026-10-03,Materials,XLB,nan
 2026-10-03,Real Estate,XLRE,nan
+2026-10-03,Consumer Discretionary,XLY,1.13
+2026-10-03,Technology,XLK,1.01
+2026-10-03,Industrials,XLI,0.78
+2026-10-03,Materials,XLB,0.66
+2026-10-03,Utilities,XLU,0.38
+2026-10-03,Communication Services,XLC,0.35
+2026-10-03,Real Estate,XLRE,0.32
+2026-10-03,Consumer Staples,XLP,0.25
+2026-10-03,Energy,XLE,0.19
+2026-10-03,Financials,XLF,0.06
+2026-10-03,Healthcare,XLV,-0.01
